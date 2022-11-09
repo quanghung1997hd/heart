@@ -4,7 +4,7 @@
 
  <head>
 
-  <title> Trái tim Thương </title>
+  <title> Trái tim </title>
 
   <style>
 
@@ -472,11 +472,14 @@ var ParticlePool = (function() {
 
     }
 
+    let queryString = window.location.search;
+    let urlParams = new URLSearchParams(queryString);
+    const name = urlParams.get('name') ?? 'Tên';
    
     context.font = "50px Comic Sans MS";
     context.fillStyle = "#ff66ff";
     context.textAlign = "center";
-    context.fillText("Thương", canvas.width/2, canvas.height/2);
+    context.fillText(name, canvas.width/2, canvas.height/2);
    
 
     particles.update(deltaTime);
