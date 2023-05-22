@@ -3,7 +3,7 @@
 <HTML>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Trái tim </title>
 
     <style>
@@ -95,13 +95,17 @@
 
         @media only screen and (max-width: 600px) {
             #pinkboard {
-                left: 11%;
+                left: 5%;
                 top: 26.5%;
+                height: 350px;
+                width: 350px;
             }
 
             #pinkboard2 {
                 top: 26%;
-                left: 11%;
+                left: 5%;
+                height: 350px;
+                width: 350px;
             }
         }
 
@@ -517,9 +521,9 @@
 
         function onResize() {
 
-            canvas.width = canvas.clientWidth;
+            canvas.width = 500;
 
-            canvas.height = canvas.clientHeight;
+            canvas.height = 500;
 
         }
 
@@ -779,9 +783,9 @@
 
                 context = canvas.getContext('2d');
 
-            canvas.width = settings2.particles.size;
+            canvas.width = 5;
 
-            canvas.height = settings2.particles.size;
+            canvas.height = 5;
 
             function to(t) {
 
@@ -862,9 +866,9 @@
 
         function onResize1() {
 
-            canvas.width = canvas.clientWidth;
+            canvas.width = 500;
 
-            canvas.height = canvas.clientHeight;
+            canvas.height = 500;
 
         }
 
